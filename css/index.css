@@ -115,3 +115,87 @@ h2 {
    height: 36px;
    width: 40px;
 }
+
+.course-section {
+  padding-bottom: 8rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 black;
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-secondary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+footer {
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a {
+    display: block;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.newsletter-form input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 black;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 40rem){
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    
+}
+    
