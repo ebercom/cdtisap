@@ -19,23 +19,23 @@ body {
 
 header
 
-.nt-1 {
+.mt-1 {
     margin-top: 1rem;
 }
 
-.nt-2 {
+.mt-2 {
     margin-top: 2rem;
 }
 
-.nb-1 {
+.mb-1 {
     margin-bottom: 1rem;
 }
 
-.nb-2 {
+.mb-2 {
     margin-bottom: 2rem;
 }
 
-.nx-auto {
+.mx-auto {
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,4 +46,72 @@ header
 
 .text-center {
     text-align: center;
+}
+
+.button {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px var(--color-black);
+    color: var(--color-black);
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+
+.hero-section img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 105%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.hero-section .button {
+    position: relative;
+}
+
+.hero-section .button::after {
+    content: '';
+    background: url("../img/arrow-curve.svg");
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+
+}
+
+.decoration {
+    display: block;
+    position: relative;
+}
+
+.decoration::after {
+   content: '';
+   background: url("../img/three-dashes.svg"); 
+   position: absolute;
+   top: -0.75rem;
+   height: 36px;
+   width: 40px;
 }
