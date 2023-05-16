@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-    --backgroud-header: #161B22;
+    --backgroud-header: #FFFFFF;
     --border-header: #8B949E;
 }
 
@@ -26,16 +26,28 @@ header ul{
 header nav .logo{
     width: 240px;
 }
-header nav .logo img{
-    width: 100%; /*Tamanho de acordo com o nav .logo(responsivo)*/
+
+header nav .logo a{
+    text-decoration: none;
 }
+
+header nav .logo a h1{
+    width: 100%; /*Tamanho de acordo com o nav .logo(responsivo)*/
+    color: #000;
+}
+
+header nav .logo a h1 span {
+    color: #009FFF;
+}
+
 header nav ul li{
     display: inline-block;
     padding: 10px;
     vertical-align: middle;
 }
+
 header nav ul li a{
-    color: #ECECEC;
+    color: #000;
     font-weight: bolder;
     text-decoration: none;
 
@@ -45,8 +57,8 @@ header nav ul li a{
     linear-gradient(
         transparent 0%,
         transparent 90%,
-        #ECECEC 93%,
-        #ECECEC 100%
+        #3a3a3a 93%,
+        #3a3a3a 100%
     );
 
     background-repeat: no-repeat;
@@ -55,14 +67,19 @@ header nav ul li a{
 
     transition: background-size 450ms, color 450ms; /*1s = 1000ms*/
 }
+
 header nav ul li a:hover{
     background-size: 100% 100%;
     background-position-x: left;
-    color: #ECECEC; /*#8B949E*/
+    color: #000; /*#8B949E*/
 }
 
 header nav ul:hover li a:not(:hover) {
     color: #8B949E;
+}
+
+header nav ul:hover li:nth-child(5) a:not(:hover) {
+    color: #000000;
 }
 
 header .menu-icon{
@@ -90,7 +107,7 @@ header .menu-icon img{
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.6s ease-in;
-        background-color: #080c11c9;
+        background-color: #ffffff9f;
     }
     header nav ul.open{
         transform: translateX(0);
