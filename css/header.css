@@ -86,9 +86,7 @@ header .menu-icon{
     display: none;
     cursor: pointer;
 }
-header .menu-icon img{
-    filter: invert(1);
-}
+
 @media (max-width:770px) {
     header .menu-icon{
         display: block;
