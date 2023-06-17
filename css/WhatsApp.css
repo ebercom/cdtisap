@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.Whatsapp-Link {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    
+    bottom: 62px;
+    right: 40px;
+
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px #888;
+    border: solid 3px white;
+
+    text-align: center;
+
+    font-size: 40px;
+
+    z-index: 1000;
+
+    animation: fadeInDown;
+    animation-duration: 1s;
+
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Whatsapp-Link:hover {
+    transform:scale(1.25,1.25);
+
+    background-color: white;
+    color: #25d366;
+    border: solid 3px #25d366;
+}
+
+.fa-whatsapp {
+    margin-top: 22px;
+}
