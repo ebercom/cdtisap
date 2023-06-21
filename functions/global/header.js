@@ -9,6 +9,21 @@ if (localStorage.getItem('profile-picture') === 'false') getProfilePicture = pro
 if (file_name !== 'index') if (!localStorage.getItem('profile-picture')) getProfilePicture = '.' + profilePictureURL; else if (localStorage.getItem('profile-picture') === 'false') getProfilePicture = '.' + profilePictureURL;
 document.getElementById('profile-picture').src = getProfilePicture;
 
-function abrirMenu(){
-    document.querySelector('nav ul').classList.toggle('open');
-};
+function abrirMenu() {
+    var ulElement = document.querySelector('nav ul');
+    ulElement.classList.toggle('open');
+
+    if (ulElement.classList.contains('open')) {
+        var newUlElement = document.createElement('ul');
+        ulElem.classList.toggle('open');
+        // Configurar o novo elemento <ul>, se necessário
+
+        // Mover os elementos <li> para o novo elemento <ul>
+        var liElements = ulElement.querySelectorAll('li');
+        liElements.forEach(function(li) {
+            newUlElement.appendChild(li);
+        });
+        
+        ulElement.appendChild(newUlElement);
+    }
+}
