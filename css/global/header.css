@@ -75,7 +75,7 @@ header nav ul li a{
 header nav ul li a:hover{
     background-size: 100% 100%;
     background-position-x: left;
-    color: #000; /*#8B949E*/
+    color: #009FFF; /*#8B949E*/
 }
 
 header nav ul:hover li a:not(:hover) {
