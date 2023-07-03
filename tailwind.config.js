@@ -16,6 +16,9 @@ module.exports = {
         'popbackground': '#00000080'
       },
     },
+    screens: {
+      'DisposG': '425px'
+    },
   },
   plugins: [],
 }

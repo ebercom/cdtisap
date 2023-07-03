@@ -137,13 +137,12 @@ body {
 
 .PopUp p > span {
     font-weight: bold;
-}
-
-.PopUp-Content 
+} 
 
 .PopUp-Close {
     cursor: pointer;
 }
+
 
 
 
