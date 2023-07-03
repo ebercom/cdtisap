@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/output.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/global/header.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <script src="functions/pages/index.js"></script>
     <script src="functions/global/header.js"></script>
     <script src="functions/global/carrosel.js"></script>
     <title>Home</title>
@@ -40,7 +49,7 @@
     </header>
 
     <main>
-        <div class="Destaque">
+        <div class="Destaque pt-20">
             <section class="TextoSobre">
                 <div class="containerTextoSobre">
                     <h1>CDTI</h1>
@@ -59,7 +68,7 @@
             </section>
 
             <section class="CarroselImagens">
-                <div class="container">
+                <div class="containerCarrosel">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-1.png" alt="">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-2.png" alt="">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-3.png" alt="">
@@ -69,7 +78,7 @@
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-7.png" alt="">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-8.png" alt="">
                 </div>
-                <div class="container">
+                <div class="containerCarrosel">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-1.png" alt="">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-2.png" alt="">
                     <img src="img/carrosel/cdti-sala-santo-antonio-da-platina-3.png" alt="">
@@ -81,6 +90,70 @@
                 </div>
             </section>
         </div>
+        
+        <div class="Cursos mt-44 pb-12">
+            <h1 class="font-bold text-center text-5xl text-blue-600 mb-10">Cursos</h1>
+
+
+            <div class="containerCursos">
+                <div class="cardCursos w-96 mx-auto rounded-2xl shadow-3xl bg-bluish-light-gray">
+                    <div class="cardTitle p-3">
+                        <h1 class="font-extrabold text-3xl text-left p-1">Curso de Robótica</h1>
+                        <p class="font-semibold p-2 border-3 border-blue-500 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, veritatis repellat, quos, beatae inventore enim culpa illo unde quaerat omnis cupiditate. Atque officiis ut nobis repudiandae reprehenderit, adipisci sit reiciendis.</p>
+                    </div>
+                    <div class="cardContent p-2 border-t-4 border-gray-400">
+                        <h2 class="font-bold text-2xl text-center">Período do Curso</h2>
+                        <div class="cardInfo p-2 grid grid-cols-2 gap-4">
+                            <div>
+                                <p><span>Data de Início: </span> </p>
+                                <p><span>Horário: </span> </p>
+                                <p><span>Idade mínima: </span> </p>
+                                <p><span>Link: </span> </p>
+                                <p><span>Local: </span></p>
+                            </div>
+                            <div>
+                                <p><span>Encerramento: </span> </p>
+                                <p><span>Dia da Semana: </span> Quarta Feira</p>
+                                
+                                <p><span>Nº de Vagas: </span> </p>
+                            </div>
+                        </div>
+                        <button class="mx-auto block p-1 px-2 text-center text-xl bg-blue-500 text-white w-auto rounded-md font-semibold" id="buttonIns"><p>Inscreva-se!</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <div class="PopUp w-auto h-auto bg-popbackground" id="PopUp">
+
+            <div class="PopUp-Content p-4 bg-bluish-light-gray rounded-2xl shadow-4xl pt-2">
+                <div class="PopUp-Close text-right pr-2.5 font-extrabold" id="PopUp-Close">X</div>
+                <h1 class="text-center font-bold text-2xl pb-4">Preencha as Informações</h1>
+
+                <div class="PopUp-Info grid grid-cols-2 gap-4">
+                    <div class="border-r-3 border-blue-400">
+                        <p><span>Data de nascimento:</span></p>
+                        <input type="text" name="data_nascimento">
+                        <p><span>Escolaridade:</span></p>
+                        <input type="text" name="escolaridade">
+                        <p><span>CPF:</span></p>
+                        <input type="text" name="cpf">
+                        <p><span>Celular:</span></p>
+                        <input type="text" name="celular">
+                        <p><span>E-mail:</span></p>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <p><span>Nome do Responsável:</span></p>
+                        <input type="text" name="nome_responsavel">
+                        <p><span>CPF:</span></p>
+                        <input type="text" name="cpf_responsavel">
+                        <p><span>Grau Parental:</span></p>
+                        <input type="text" name="grau_parental">
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
